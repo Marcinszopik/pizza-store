@@ -23,5 +23,8 @@ h1 {
     padding-bottom: 50px;
     padding-left: 80px;
   } 
+  .hide{
+    display:none
+  }
 
   

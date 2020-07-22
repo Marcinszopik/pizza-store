@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Pizza </title>
-  <!-- bootstrap CDN -->
-  <link
+  <head>
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous" />
-     <link rel="stylesheet" href="css/styles.css" />
-     <!-- JQuery CDN -->
-     <script
-     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-     crossorigin="anonymous"
-   ></script>
-  <script src="js/scripts.js"></script>
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-</head>
-<!-- <body>
-    <div class="waveWrapper waveAnimation">
-        <div class="waveWrapperInner bgTop">
-          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
-        </div>
-        <div class="waveWrapperInner bgMiddle">
-          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-        </div>
-        <div class="waveWrapperInner bgBottom">
-          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-        </div> -->
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Pizza </h1>
-    </div>
-    <form id="pizza-parlor">
-      <div class="form-group">
-        <h2>Pick your size</h2>
-        <input type="radio" id="Pizza" name="size" value="small">
-        <label for="size">small</label><br>
-        <input type="radio" id="Pizza" name="size" value="medium">
-        <label for="size">medium</label><br>
-        <input type="radio" id="Pizza" name="size" value="large">
-        <label for="size">large</label><br>
-      </div>
-      <div class="form-group">
-       <h2>Choose your toppings</h2>
-        <input type="checkbox" name="toppings" value=mushrooms>mushrooms<br>
-        <input type="checkbox" name="toppings" value="cheese">cheese<br>
-        <input type="checkbox" name="toppings" value="tomatoes">tomatoes<br>
-        <input type="checkbox" name="toppings" value="olives">olives<br>
-        <input type="checkbox" name="toppings" value="pepperoni">pepperoni<br>
-      </div>
-      <button id="checkoutButton" type="submit" class="btn btn-danger">Checkout</button>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza</title>
+  </head>
 
-    </form>
-    <div class="result">
-      Your total is<span id="total"></span>
-    </div>
-   <br>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pizza</h1>
+      </div>
+      <form id="pizza-parlor">
+        <div class="form-group">
+          <h2>Pick your size</h2>
+          <input type="radio" id="Pizza" name="size" value="small" />
+          <label for="size">small</label><br />
+          <input type="radio" id="Pizza" name="size" value="medium" />
+          <label for="size">medium</label><br />
+          <input type="radio" id="Pizza" name="size" value="large" />
+          <label for="size">large</label><br />
+
+          <h2>Choose your toppings</h2>
+          <input
+            type="checkbox"
+            name="toppings"
+            value="mushrooms"
+          />mushrooms<br />
+          <input type="checkbox" name="toppings" value="cheese" />cheese<br />
+          <input
+            type="checkbox"
+            name="toppings"
+            value="tomatoes"
+          />tomatoes<br />
+          <input type="checkbox" name="toppings" value="olives" />olives<br />
+          <input
+            type="checkbox"
+            name="toppings"
+            value="pepperoni"
+          />pepperoni<br />
+
+          <button id="checkoutButton" type="submit" class="btn btn-danger">
+            Checkout
+          </button>
+        </div>
+      </form>
+      <div class="hide">
+      <div class="result">Your total is $<span id="total"></span></div>
+<br />
       <p><b>Enjoy your day!!</b></p>
-      
-    </span>
-  </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
-</div>
-     
