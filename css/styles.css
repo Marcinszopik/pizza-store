@@ -1,12 +1,16 @@
+
+
 body {
-    background-color: lightblue;
+    background-color: rgba(41, 144, 151, 0.598);
   }
   body {
   color: rgb(30, 14, 75);
 }
 
+
+
 h1 {
-  color: rgb(8, 7, 36);
+  color: rgb(18, 90, 56);
 }
 
 
@@ -17,7 +21,7 @@ h1 {
 
  div {
     border: 1px solid black;
-    background-color: lightblue;
+    background-color: rgb(130, 197, 219);
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
@@ -27,4 +31,27 @@ h1 {
     display:none
   }
 
+.fancy {
+  display: inline-block;
+  background: rgb(196, 43, 170);
+  color: aliceblue;
+  padding: 18px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: progress;
+  border:white (244, 243, 236);
+}
+img {
+  max-width: 30%;
+  max-height: 300%;
+  display: block;
+}
+
+img {
+  width: 270px;
+  border: 1px solid black;
+}
   
+

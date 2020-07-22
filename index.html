@@ -1,67 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
-    <title>Pizza</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza</title>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Pizza</h1>
-      </div>
-      <form id="pizza-parlor">
-        <div class="form-group">
-          <h2>Pick your size</h2>
-          <input type="radio" id="Pizza" name="size" value="small" />
-          <label for="size">small</label><br />
-          <input type="radio" id="Pizza" name="size" value="medium" />
-          <label for="size">medium</label><br />
-          <input type="radio" id="Pizza" name="size" value="large" />
-          <label for="size">large</label><br />
-
-          <h2>Choose your toppings</h2>
-          <input
-            type="checkbox"
-            name="toppings"
-            value="mushrooms"
-          />mushrooms<br />
-          <input type="checkbox" name="toppings" value="cheese" />cheese<br />
-          <input
-            type="checkbox"
-            name="toppings"
-            value="tomatoes"
-          />tomatoes<br />
-          <input type="checkbox" name="toppings" value="olives" />olives<br />
-          <input
-            type="checkbox"
-            name="toppings"
-            value="pepperoni"
-          />pepperoni<br />
-
-          <button id="checkoutButton" type="submit" class="btn btn-danger">
-            Checkout
-          </button>
-        </div>
-      </form>
-      <div class="hide">
-      <div class="result">Your total is $<span id="total"></span></div>
-<br />
-      <p><b>Enjoy your day!!</b></p>
-      </div>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pizza</h1>
     </div>
-  </body>
+    <form id="pizza-parlor">
+      <div class="form-group">
+        <h2>Pick your size</h2>
+        <input type="radio" id="Pizza" name="size" value="small" />
+        <label for="size">small</label><br />
+        <input type="radio" id="Pizza" name="size" value="medium" />
+        <label for="size">medium</label><br />
+        <input type="radio" id="Pizza" name="size" value="large" />
+        <label for="size">large</label><br />
+
+        <h2>Choose your toppings</h2>
+        <input type="checkbox" name="toppings" value="mushrooms" />mushrooms<br />
+        <input type="checkbox" name="toppings" value="cheese" />cheese<br />
+        <input type="checkbox" name="toppings" value="tomatoes" />tomatoes<br />
+        <input type="checkbox" name="toppings" value="olives" />olives<br />
+        <input type="checkbox" name="toppings" value="pepperoni" />pepperoni<br />
+
+        <button id="checkoutButton" type="submit" class="btn btn-danger">
+          Checkout
+        </button>
+      </div>
+    </form>
+    <div class="hide">
+      <div class="result">Your total is $<span id="total"></span></div>
+      <br />
+      <p><b>Enjoy your day!!</b></p>
+    </div>
+  </div>
+</body>
+
 </html>
