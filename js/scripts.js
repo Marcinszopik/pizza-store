@@ -1,17 +1,3 @@
-const pizzaPrice = {
-  small: 10,
-  medium: 15,
-  large: 20,
-};
-
-const toppingsPrice = {
-  mushrooms: 1,
-  cheese: 1,
-  pepperoni: 1,
-  olives: 2,
-  tomatoes: 1,
-};
-
 // Object literal
 
 const pizzaPrice = {
@@ -51,7 +37,8 @@ Pizza.prototype.showTotal = function (toppings) {
 
 $(document).ready(function () {
   $("#total").empty();
-  $("form#pizza-parlor").submit(function (event) {
+  $("form#pizza-store").submit(function (event) {
+    console.log("this is trigger");
     event.preventDefault();
     $(".hide").show();
     //getting the radiobutton value
@@ -68,25 +55,25 @@ $(document).ready(function () {
     let pizza = new Pizza(size);
     $("#total").empty().append(pizza.showTotal(toppings));
 
-    $(document).ready(function () {
-      console.log("hi");
-      $("form#pizza-parlor").submit(function (event) {
-        event.preventDefault();
+    // $(document).ready(function () {
+    //   console.log("hi");
+    //   $("form#pizza-parlor").submit(function (event) {
+    //     event.preventDefault();
 
         //getting the radiobutton value
 
-        let size = $('input[name="size"]:checked').val();
+        // let size = $('input[name="size"]:checked').val();
 
         // getting the checkbox value
 
-        let toppings = $.map($('input[name="toppings"]:checked'), function (c) {
-          return c.value;
-        });
+        // let toppings = $.map($('input[name="toppings"]:checked'), function (c) {
+        //   return c.value;
+        // });
 
         console.log(pizza.total);
-      });
-    });
-    let pizza = new Pizza(size);
+     
+  
+    // let pizza = new Pizza(size);
     let total = pizza.showTotal(toppings);
   });
 });
